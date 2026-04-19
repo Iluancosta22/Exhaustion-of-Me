@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8705445073473214141}
-  m_Layer: 0
+  - component: {fileID: 4688969724760140249}
+  m_Layer: 2
   m_Name: Desktop_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,6 +43,27 @@ Transform:
   - {fileID: 3595572092899626455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4688969724760140249
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927389995431399553}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.2312036, y: 1.5326939, z: 1.1362}
+  m_Center: {x: 0, y: 0.75061417, z: 0}
 --- !u!1001 &1072431113044115831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105,6 +127,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c1ec5610c952fed4ab40a807e6495d74, type: 3}
       propertyPath: m_Name
       value: computer_tower (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1ec5610c952fed4ab40a807e6495d74, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -179,6 +205,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 8ce3d06e06c563148bc95c4e5d4af865, type: 3}
       propertyPath: m_Name
       value: file_binder_alt4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8ce3d06e06c563148bc95c4e5d4af865, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8ce3d06e06c563148bc95c4e5d4af865, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -258,6 +292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: computer_keyboard (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b9f79fefa1876454787f8964922e6c56, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: b9f79fefa1876454787f8964922e6c56, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -265,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: b9f79fefa1876454787f8964922e6c56, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: b9f79fefa1876454787f8964922e6c56, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -344,6 +386,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: computer_monitor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f02e5e4a1c3262749819b52db73fe79b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f02e5e4a1c3262749819b52db73fe79b, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -422,6 +472,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: desk1_alt4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8351315f0a262814d9a5ff810a4afddb, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 8351315f0a262814d9a5ff810a4afddb, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -495,6 +553,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 90931e65143de6247835addeec2c382a, type: 3}
       propertyPath: m_Name
       value: file_binder_alt3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 90931e65143de6247835addeec2c382a, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 90931e65143de6247835addeec2c382a, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -574,11 +640,44 @@ PrefabInstance:
       propertyPath: m_Name
       value: office_chair_alt (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 837fb2ae542812c47b063d5b617102bc, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 837fb2ae542812c47b063d5b617102bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190755216293201399}
   m_SourcePrefab: {fileID: 100100000, guid: 837fb2ae542812c47b063d5b617102bc, type: 3}
+--- !u!1 &3665133883223545876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 837fb2ae542812c47b063d5b617102bc, type: 3}
+  m_PrefabInstance: {fileID: 4475524736117679429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1190755216293201399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3665133883223545876}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.007580636, y: 0.0070931455, z: 0.01037709}
+  m_Center: {x: -0.00005311838, y: -0.00034620185, z: 0.0037834859}
 --- !u!4 &4149780588770476718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 837fb2ae542812c47b063d5b617102bc, type: 3}
@@ -651,6 +750,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 71937274125649b47bd8a141fdef094f, type: 3}
       propertyPath: m_Name
       value: paper_stack_large (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 71937274125649b47bd8a141fdef094f, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 71937274125649b47bd8a141fdef094f, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -730,6 +837,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: computer_mouse (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aa1063c0aa1ce204e932d9ab92f677c8, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: aa1063c0aa1ce204e932d9ab92f677c8, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -808,6 +923,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: pen2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 609956ef7a827184388a669e2e7dacef, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 609956ef7a827184388a669e2e7dacef, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -885,6 +1008,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: f1b4df633c39b2044bc1edb9a9aa14ee, type: 3}
       propertyPath: m_Name
       value: file_binder_alt2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1b4df633c39b2044bc1edb9a9aa14ee, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: f1b4df633c39b2044bc1edb9a9aa14ee, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

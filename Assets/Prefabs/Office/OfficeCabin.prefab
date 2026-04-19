@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6027272693479438554}
-  m_Layer: 0
+  - component: {fileID: 5495085807044316832}
+  - component: {fileID: 5901632020448255384}
+  m_Layer: 2
   m_Name: OfficeCabin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,6 +37,48 @@ Transform:
   - {fileID: 3669593063110535305}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5495085807044316832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534597901639182445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.48160553, y: 3.7913995, z: 5.3266716}
+  m_Center: {x: 3.7683907, y: 1.8542869, z: -2.4225368}
+--- !u!65 &5901632020448255384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534597901639182445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.38191223, y: 3.7913995, z: 5.3266716}
+  m_Center: {x: -3.2400208, y: 1.8542869, z: -2.4225368}
 --- !u!1001 &740362399228576841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: divider_black_low_half (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -134,6 +182,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -201,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: divider_black_low_half (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -248,6 +304,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -373,6 +433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: divider_black_low_half
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.5
@@ -420,6 +484,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ceaa2e6c7998001428edfbbada140254, type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
