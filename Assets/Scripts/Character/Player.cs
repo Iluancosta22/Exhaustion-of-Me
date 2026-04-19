@@ -66,8 +66,17 @@ public class Player : MonoBehaviour
         mouseSensitivity = PlayerPrefs.GetFloat("MouseSensitivity");
     }
 
-    private void OnEnable()  => player.Enable();
-    private void OnDisable() => player.Disable();
+    private void OnEnable()
+    {
+        MouseSetting.OnMouseSensitivity += SetSensitivity;
+        player.Enable();
+    }
+    
+    private void OnDisable()
+    {
+        MouseSetting.OnMouseSensitivity -= SetSensitivity;
+        player.Disable();
+    }
 
     private void Update()
     {
@@ -109,6 +118,10 @@ public class Player : MonoBehaviour
 
     #region Look
 
+    private void SetSensitivity()
+    {
+        mouseSensitivity = PlayerPrefs.GetFloat("MouseSensitivity");
+    }
     private void HandleLook()
     {
         Vector2 lookInput = player.Look.ReadValue<Vector2>() * mouseSensitivity;

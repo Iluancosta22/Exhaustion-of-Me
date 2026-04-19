@@ -27,6 +27,12 @@ public class QualitySettingsMenu : MonoBehaviour
 
     void SetupResolutions()
     {
+        // No WebGL, o navegador controla a resolução — define 1280x720 e desativa o dropdown
+        #if UNITY_WEBGL && !UNITY_EDITOR
+            Screen.SetResolution(1280, 720, false);
+            if (resolutionDropdown != null) resolutionDropdown.interactable = false;
+            return;
+        #endif
         resolutionDropdown.ClearOptions();
 
         // Pega todas as resoluções suportadas
@@ -85,6 +91,10 @@ public class QualitySettingsMenu : MonoBehaviour
 
     public void ApplyResolution(int index)
     {
+        #if UNITY_WEBGL && !UNITY_EDITOR
+            return; // Resolução gerenciada pelo navegador no WebGL
+        #endif
+
         if (index < 0 || index >= validResolutions.Count)
             return;
 

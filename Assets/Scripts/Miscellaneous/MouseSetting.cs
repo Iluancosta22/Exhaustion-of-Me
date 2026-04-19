@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MouseSetting : MonoBehaviour
 {
     public Slider SensitivitySlider;
+    public static event Action OnMouseSensitivity;
 
     void Start()
     {
@@ -16,6 +18,8 @@ public class MouseSetting : MonoBehaviour
     public void SetSensitivity(float value)
     {
         PlayerPrefs.SetFloat("MouseSensitivity", value); 
-        PlayerPrefs.Save();      
+        PlayerPrefs.Save();
+
+        OnMouseSensitivity?.Invoke();
     }
 }
