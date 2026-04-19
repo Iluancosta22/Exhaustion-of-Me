@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator animator;
 
     [Header("Canvas")]
+    [SerializeField] private GameObject Pause;
     [SerializeField] private GameObject DoorInteract;
 
     private CharacterController controller;
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
     private bool    isWalking;
     private bool    isInteract;
     private RaycastHit hit;
+    private  bool isPause;
 
     public bool Running => isRunning;
     public bool Walking => isWalking;
@@ -70,7 +72,8 @@ public class Player : MonoBehaviour
     private void Update()
     {
         if (!alive) return;
-
+        HandlePause();
+        if(isPause) return;
         HandleLook();
         HandleMovement();
         HandleCrouch();
@@ -79,6 +82,30 @@ public class Player : MonoBehaviour
     }
 
     #endregion
+
+    private void HandlePause()
+    {
+        if(!player.Pause.WasPressedThisFrame()) return;
+        PauseController.HandlePause();
+
+        if (!isPause)
+        {
+            Pause.SetActive(true);
+            isPause = true;
+        }
+        else
+        {
+            Pause.SetActive(false);
+            isPause = false;
+        } 
+    }
+
+    public void PauseContinue()
+    {
+        PauseController.HandlePause();
+        Pause.SetActive(false);
+        isPause = false;
+    }
 
     #region Look
 

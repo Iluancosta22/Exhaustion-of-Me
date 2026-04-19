@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   door: {fileID: 4077158924507603047}
-  reverseDirection: 0
+  player: {fileID: 0}
   targetRotation: 120
   animationDuration: 2
   doorAudio: {fileID: 4543351789941821873}
@@ -171,7 +171,7 @@ AudioSource:
   m_GameObject: {fileID: 4591356810257553832}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7777404943367574815, guid: 1e697f3e473c546479218b86d67099fd, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a478ef5f51e76d94ab6bab69b22a52c4, type: 3}
   m_PlayOnAwake: 0
