@@ -26,13 +26,21 @@ public class Player : MonoBehaviour
     [Header("Animation")]
     [SerializeField] private Animator animator;
 
+    [Header("Canvas")]
+    [SerializeField] private GameObject DoorInteract;
+
     private CharacterController controller;
     private Vector3 velocity;
     private float   xRotation;
     private bool    isCrouching;
     private bool    isRunning;
+    private bool    isWalking;
     private bool    isInteract;
     private RaycastHit hit;
+
+    public bool Running => isRunning;
+    public bool Walking => isWalking;
+
 
     private GameInput                input;
     private GameInput.PlayerActions  player;
@@ -52,6 +60,8 @@ public class Player : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible   = false;
+
+        mouseSensitivity = PlayerPrefs.GetFloat("MouseSensitivity");
     }
 
     private void OnEnable()  => player.Enable();
@@ -92,8 +102,11 @@ public class Player : MonoBehaviour
             velocity.y = -2f;
 
         Vector2 moveInput = player.Move.ReadValue<Vector2>();
-        isRunning = player.Sprint.IsPressed() && !isCrouching && moveInput.y > 0f;
-
+        
+        isWalking = moveInput.magnitude > 0.1f;
+        
+        isRunning = player.Sprint.IsPressed() && !isCrouching && moveInput.y > 0.1f;
+        
         float speed = isCrouching ? crouchSpeed : (isRunning ? runSpeed : walkSpeed);
         Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
 
@@ -125,13 +138,16 @@ public class Player : MonoBehaviour
 
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, raycastDistance))
         {
-            Debug.Log("Acertou: " + hit.collider.name);
-
-            isInteract = hit.collider.GetComponent<IInteract>() != null;
+            if(hit.collider.GetComponent<IInteract>() != null)
+            {
+                DoorInteract.SetActive(true);
+                isInteract = true;
+            }
         }
         else
         {
             isInteract = false;
+            DoorInteract.SetActive(false);
         }
     }
 

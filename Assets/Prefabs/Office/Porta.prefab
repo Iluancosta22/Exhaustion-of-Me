@@ -300,6 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5267114578610708723}
+  - component: {fileID: 3736992011258774603}
   m_Layer: 6
   m_Name: Porta
   m_TagString: Untagged
@@ -326,6 +327,19 @@ Transform:
   - {fileID: 1129882899950083454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3736992011258774603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055264848791715548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e0db46a6fec694188f44e78aebe2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RandomizeDoor
+  wall: {fileID: 7611861482025437743}
 --- !u!1 &7611861482025437743
 GameObject:
   m_ObjectHideFlags: 0
@@ -344,7 +358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1129882899950083454
 Transform:
   m_ObjectHideFlags: 0
